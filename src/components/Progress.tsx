@@ -18,6 +18,19 @@ const Progress = () => {
         duration: 1,
         ease: "power#.in",
       });
+
+    preloaderImages.forEach((preloaderImg, index) => {
+      tl.to(
+        preloaderImg,
+        {
+          clipPath: "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)",
+          duration: 1,
+          ease: "hop",
+          delay: index * 0.75,
+        },
+        "-=5"
+      );
+    });
   }, []);
   return (
     <>
