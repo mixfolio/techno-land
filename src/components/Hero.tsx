@@ -6,7 +6,7 @@ const Hero = () => {
           // style={{ w}}
           // id="schema"
 
-          src="./videos/hud.mp4"
+          src="./videos/hud.m4v"
           loop
           muted
           autoPlay
