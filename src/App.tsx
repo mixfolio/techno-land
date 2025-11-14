@@ -10,7 +10,7 @@ import {
   Navbar,
   OurStrength,
   Tools,
-  VideoBlock,
+  // VideoBlock,
 } from "./components";
 import Form from "./components/Form";
 
@@ -21,7 +21,7 @@ const App = () => {
     <main>
       <Navbar />
       <Hero />
-      <VideoBlock />
+      {/* <VideoBlock /> */}
       <Facts />
       <OurStrength />
       <MainBlock />

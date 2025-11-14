@@ -122,15 +122,15 @@ body {
   }
 
   #hero {
-    @apply border border-amber-300 mt-16 py-20;
+    @apply border border-amber-300 mt-16;
     div {
       @apply container mx-auto;
       h1 {
-        @apply text-3xl uppercase lg:text-5xl/16  2xl:text-7xl/23 text-red-600 sm:text-amber-500 md:text-yellow-500 lg:text-green-500 xl:text-blue-500  2xl:text-cyan-700;
+        @apply text-3xl uppercase lg:text-5xl/16  2xl:text-5xl/16 text-white;
       }
 
       p {
-        @apply text-3xl mt-10 mb-10;
+        @apply text-3xl mt-10 mb-10 text-gray-300;
       }
 
       button {
