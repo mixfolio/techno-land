@@ -1,4 +1,5 @@
 export { default as Progress } from "./Progress";
+
 export { default as Navbar } from "./Navbar";
 export { default as Hero } from "./Hero";
 export { default as Facts } from "./Facts";

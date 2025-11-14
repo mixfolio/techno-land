@@ -1,5 +1,7 @@
 @import "tailwindcss";
 
+/* @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"); */
+
 @font-face {
   font-family: "Regular";
   src: url("/fonts/regular.otf");
@@ -39,7 +41,7 @@
   --font-medium: "Medium";
   --font-semibold: "SemiBold";
   --font-bold: "Bold";
-  --color-primary: #008c99;
+  --color-primary: #7a992b;
   --color-dark-100: #86868b;
   --color-dark-200: #2e2e30;
   --color-light-100: #adb5bd;
@@ -89,7 +91,7 @@ body {
 
 @layer components {
   h1 {
-    @apply font-semibold lg:text-3xl 2xl:text-5xl text-black;
+    @apply text-3xl uppercase lg:text-5xl/16  2xl:text-7xl text-red-600 sm:text-amber-500 md:text-yellow-500 lg:text-green-500 xl:text-blue-500  2xl:text-violet-500;
   }
   h2 {
     @apply font-semibold lg:text-3xl 2xl:text-5xl text-black;
@@ -122,7 +124,7 @@ body {
     }
   }
 
-  #hero {
+  #hero-1 {
     @apply h-fit lg:h-[94vh] col-center mt-40 lg:mt-20 2xl:mt-[7vh];
 
     div {
