@@ -4,3 +4,6 @@ export { default as Hero } from "./Hero";
 export { default as Facts } from "./Facts";
 export { default as OurStrength } from "./OurStrength";
 export { default as Footer } from "./Footer";
+export { default as VideoBlock } from "./VideoBlock";
+export { default as MainBlock } from "./MainBlock";
+export { default as Highlights } from "./Highlights";

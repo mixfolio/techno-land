@@ -21,8 +21,8 @@ const Highlights = () => {
 
   return (
     <section id="highlights">
-      <h2>Отрасли и объекты внедрения</h2>
-      <h3>Возможно, какой-то текст</h3>
+      <h2>Кейсы</h2>
+      {/* <h3>Возможно, какой-то текст</h3> */}
 
       <div className="masonry">
         <div className="left-column">
@@ -32,7 +32,10 @@ const Highlights = () => {
           </div>
           <div>
             <img src="./water-icon-48.svg" alt="Водоснабжение" />
-            <p>Водоснабжение</p>
+            <p>
+              Разработана и внедрена система мониторинга для 10 газовых
+              водогрейных котельных
+            </p>
           </div>
         </div>
         <div className="right-column">
@@ -43,8 +46,8 @@ const Highlights = () => {
               <span>Apple Intelligence.</span>
             </p> */}
             <p>
-              Теплоснабжение <br />
-              {/* <span>Apple Intelligence.</span> */}
+              Разработана и внедрена система мониторинга для 10 газовых
+              водогрейных котельных
             </p>
           </div>
           <div>
