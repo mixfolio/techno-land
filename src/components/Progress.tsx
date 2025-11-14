@@ -1,8 +1,13 @@
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
+import { useRef } from "react";
 
 const Progress = () => {
-  const preloaderImages = gsap.utils.toArray(".preloader-images .img");
+  const preloaderImagesRef = useRef<HTMLDivElement>(null);
+
+  const preloaderImages = gsap.utils.toArray<HTMLAllCollection>(
+    ".preloaderImages .img"
+  );
 
   const tl = gsap.timeline({ delay: 0 });
 
@@ -36,7 +41,7 @@ const Progress = () => {
     <>
       <div className="preloader">
         <div className="progress-bar" />
-        <div className="preloader-images">
+        <div className="preloader-images" ref={preloaderImagesRef}>
           <div className="img">
             <img src="./display-1.jpg" alt="Картинка-1" />
           </div>

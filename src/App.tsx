@@ -1,13 +1,17 @@
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/all";
-import { Progress } from "./components";
+import { Facts, Footer, Hero, Navbar, OurStrength } from "./components";
 
 gsap.registerPlugin(ScrollTrigger);
 
 const App = () => {
   return (
     <main>
-      <Progress />
+      <Navbar />
+      <Hero />
+      <Facts />
+      <OurStrength />
+      <Footer />
     </main>
   );
 };
