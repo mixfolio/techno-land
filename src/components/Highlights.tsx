@@ -20,7 +20,7 @@ const Highlights = () => {
   });
 
   return (
-    <section id="highlights">
+    <section id="highlights" className="py-20">
       <h2>Кейсы</h2>
       {/* <h3>Возможно, какой-то текст</h3> */}
 

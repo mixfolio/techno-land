@@ -1,6 +1,7 @@
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/all";
 import {
+  Achievements,
   Facts,
   Footer,
   Hero,
@@ -8,8 +9,10 @@ import {
   MainBlock,
   Navbar,
   OurStrength,
+  Tools,
   VideoBlock,
 } from "./components";
+import Form from "./components/Form";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -23,6 +26,9 @@ const App = () => {
       <OurStrength />
       <MainBlock />
       <Highlights />
+      <Achievements />
+      <Tools />
+      <Form />
       <Footer />
     </main>
   );

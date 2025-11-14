@@ -25,7 +25,7 @@ const Showcase = () => {
   }, [isTablet]);
 
   return (
-    <section id="showcase" style={{ paddingTop: 64 }}>
+    <section id="showcase" className="p-20">
       <div className="media">
         {/* <video src="/videos/game.mp4" loop muted autoPlay playsInline /> */}
         <video
