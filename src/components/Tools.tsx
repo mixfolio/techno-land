@@ -2,19 +2,16 @@ import { tools } from "../contstants";
 
 const Tools = () => {
   return (
-    <section id="tools" className="border py-20">
-      <div className="container mx-auto">
+    <section id="tools">
+      <div className="wrapper">
         <h2>Технологии и инструменты</h2>
-        <div className="grid gap-6 lg:grid-cols-7 mt-12">
+        <div className="list">
           {tools.map((i) => (
-            <div
-              key={i.href}
-              className="col-center g-2 bg-gray-100 rounded-2xl p-6"
-            >
-              <svg className="w-16 h-16">
+            <div key={i.href} className="card">
+              <svg>
                 <use href={`./sprite.svg#${i.href}`} />
               </svg>
-              <p className=" text-cyan-800">{i.title}</p>
+              <p>{i.title}</p>
             </div>
           ))}
         </div>

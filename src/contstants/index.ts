@@ -139,6 +139,24 @@ const achievements = [
   },
 ];
 
+const digitals = [
+  {
+    id: "digital-01",
+    title: "10%",
+    text: "снижение затрат на эксплуатацию, ремонт и обслуживание",
+  },
+  {
+    id: "digital-02",
+    title: "30%",
+    text: "повышение производительности труда обслуживающего персонала",
+  },
+  {
+    id: "digital-03",
+    title: "20%",
+    text: "снижение потребления ресурсов за счет оптимизации и прогноза",
+  },
+];
+
 const tools = [
   { href: "kotlin", title: "Kotlin" },
   { href: "java", title: "Java" },
@@ -296,5 +314,6 @@ export {
   ourStrength,
   block3,
   achievements,
+  digitals,
   tools,
 };

@@ -10,3 +10,4 @@ export { default as MainBlock } from "./MainBlock";
 export { default as Highlights } from "./Highlights";
 export { default as Achievements } from "./Achievements";
 export { default as Tools } from "./Tools";
+export { default as Digits } from "./Digits";
