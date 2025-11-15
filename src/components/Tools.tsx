@@ -1,25 +1,23 @@
-// import { block3 } from "../contstants";
+import { tools } from "../contstants";
 
 const Tools = () => {
   return (
-    <section id="facts" className="border py-20">
+    <section id="tools" className="border py-20">
       <div className="container mx-auto">
         <h2>Технологии и инструменты</h2>
-        {/* <div className="grid gap-x-6 lg:grid-cols-2 mt-6">
-          {block3.map((i) => (
-            <div key={i.id}>
-              <h4 className="text-2xl text-cyan-800 mb-2">{i.title}</h4>
-              {i.list.map((item) => (
-                <div key={item.id} className="flex items-center gap-2 mt-2">
-                  <div className="w-4 h-4 bg-primary"></div>
-                  <p className="text-xl text-gray-500 " key={item.id}>
-                    {item.text}
-                  </p>
-                </div>
-              ))}
+        <div className="grid gap-6 lg:grid-cols-7 mt-12">
+          {tools.map((i) => (
+            <div
+              key={i.href}
+              className="col-center g-2 bg-gray-100 rounded-2xl p-6"
+            >
+              <svg className="w-16 h-16">
+                <use href={`./sprite.svg#${i.href}`} />
+              </svg>
+              <p className=" text-cyan-800">{i.title}</p>
             </div>
           ))}
-        </div> */}
+        </div>
       </div>
     </section>
   );

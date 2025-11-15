@@ -122,7 +122,7 @@ body {
   }
 
   #hero {
-    @apply border border-amber-300 mt-16;
+    @apply bg-black mt-16;
     div {
       @apply container mx-auto;
       h1 {
@@ -438,6 +438,9 @@ body {
         }
       }
     }
+  }
+
+  #tools {
   }
 
   #form {

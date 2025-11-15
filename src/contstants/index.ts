@@ -139,6 +139,30 @@ const achievements = [
   },
 ];
 
+const tools = [
+  { href: "kotlin", title: "Kotlin" },
+  { href: "java", title: "Java" },
+  { href: "spring", title: "Spring" },
+  { href: "angular", title: "Angular" },
+  { href: "reactjs", title: "ReactJS" },
+  { href: "postgre", title: "PostgreSQL" },
+  { href: "oracle", title: "Oracle" },
+  { href: "kafka", title: "Kafka" },
+  { href: "kubernetes", title: "Kubernetes" },
+  { href: "elk", title: "ELK" },
+  { href: "prometheus", title: "Prometheus" },
+  { href: "grafana", title: "Grafana" },
+  { href: "github", title: "GitHub" },
+  { href: "jira", title: "Jira" },
+  { href: "minio", title: "MinIO" },
+  { href: "consul", title: "Consul" },
+  { href: "jaeger", title: "Jaeger" },
+  { href: "liquibase", title: "Liquibase" },
+  { href: "hibernate", title: "Hibernate" },
+  { href: "figma", title: "Figma" },
+  { href: "swagger", title: "Swagger" },
+];
+
 const noChangeParts = [
   "Object_84",
   "Object_37",
@@ -272,4 +296,5 @@ export {
   ourStrength,
   block3,
   achievements,
+  tools,
 };
