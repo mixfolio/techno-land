@@ -4,9 +4,9 @@ const Digits = () => {
   return (
     <section id="digits">
       <div className="wrapper">
-        <div>
+        <div className="list">
           {digitals.map((i) => (
-            <div key={i.id}>
+            <div className="card" key={i.id}>
               <h4>{i.title}</h4>
               <p>{i.text}</p>
             </div>

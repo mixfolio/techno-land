@@ -1,10 +1,12 @@
+import { Title } from "./ui/Title";
+
 const Form = () => {
   return (
-    <section id="form1" className="bg-gray-800 py-20">
-      <div className="container mx-auto">
-        <h2 className="text-white text-center">Оставьте заявку на проект</h2>
+    <section id="form">
+      <div className="wrapper">
+        <Title title="Оставьте заявку на проект" />
 
-        <div className="flex items-center justify-center mt-20">
+        <div className="flex items-center justify-center mt-6 lg:mt-12">
           <img src="./form.svg" alt="Форма" />
         </div>
       </div>

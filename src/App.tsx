@@ -2,11 +2,11 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/all";
 import {
   Achievements,
+  Cases,
   Digits,
   Facts,
   Footer,
   Hero,
-  Highlights,
   MainBlock,
   Navbar,
   OurStrength,
@@ -26,7 +26,7 @@ const App = () => {
       <Facts />
       <OurStrength />
       <MainBlock />
-      <Highlights />
+      <Cases />
       <Digits />
       <Achievements />
       <Tools />
