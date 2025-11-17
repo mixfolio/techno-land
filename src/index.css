@@ -1,25 +1,28 @@
 @import "tailwindcss";
 
-/* @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"); */
-
 @font-face {
-  font-family: "Regular";
-  src: url("/fonts/regular.otf");
+  font-family: "Montserrat-Regular";
+  src: url("/fonts/Montserrat-Regular.ttf");
 }
 
 @font-face {
-  font-family: "Medium";
-  src: url("/fonts/medium.otf");
+  font-family: "Involve-Regular";
+  src: url("/fonts/Involve-Regular.ttf");
 }
 
 @font-face {
-  font-family: "SemiBold";
-  src: url("/fonts/semibold.otf");
+  font-family: "Involve-Medium";
+  src: url("/fonts/Involve-Medium.ttf");
 }
 
 @font-face {
-  font-family: "Bold";
-  src: url("/fonts/bold.otf");
+  font-family: "Involve-SemiBold";
+  src: url("/fonts/Involve-SemiBold.ttf");
+}
+
+@font-face {
+  font-family: "Involve-Bold";
+  src: url("/fonts/Involve-Bold.ttf");
 }
 
 * {
@@ -37,10 +40,10 @@
 }
 
 @theme {
-  --font-regular: "Regular";
-  --font-medium: "Medium";
-  --font-semibold: "SemiBold";
-  --font-bold: "Bold";
+  --font-regular: "Montserrat-Regular";
+  --font-medium: "Involve-Medium";
+  --font-semibold: "Involve-SemiBold";
+  --font-bold: "Involve-Bold";
   --color-primary: #7a992b;
   --color-secondary: #1aaaaa;
   --color-tertiary: #1c4e55;
@@ -93,7 +96,7 @@ body {
 
 @layer components {
   h2 {
-    @apply font-semibold text-3xl 2xl:text-5xl text-black;
+    @apply font-semibold text-3xl xl:text-5xl/14;
   }
   h4 {
     @apply text-2xl font-semibold lg:text-4xl  text-tertiary;
@@ -136,7 +139,7 @@ body {
     .wrapper {
       @apply container mx-auto;
       h1 {
-        @apply text-3xl uppercase lg:text-5xl/16  2xl:text-5xl/16 text-white;
+        @apply font-medium text-3xl uppercase lg:text-5xl/16  2xl:text-5xl/16 text-white;
       }
 
       p {
@@ -343,13 +346,13 @@ body {
   }
 
   #form {
-    @apply bg-gray-800 py-10 lg:py-20;
+    @apply py-10 lg:py-20;
 
     .wrapper {
       @apply container mx-auto px-6;
 
       h2 {
-        @apply text-white;
+        /* @apply text-white; */
       }
     }
   }

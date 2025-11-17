@@ -1,15 +1,11 @@
 import { tools } from "../contstants";
+import { Title } from "./ui/Title";
 
 const Tools = () => {
   return (
     <section id="tools">
       <div className="wrapper">
-        <div className="title">
-          <svg>
-            <use href="./circle-bullet.svg" />
-          </svg>
-          <h2>Технологии и инструменты</h2>
-        </div>
+        <Title title="Технологии и инструменты" />
         <div className="list">
           {tools.map((i) => (
             <div key={i.href} className="card">

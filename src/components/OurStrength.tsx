@@ -14,6 +14,7 @@ function grid(rows: number, cols: number, svgRef: SVGSVGElement) {
       rect.setAttribute("fill", "black");
       rect.setAttribute("width", "24");
       rect.setAttribute("height", "24");
+      rect.setAttribute("rx", "12");
       rect.setAttribute("x", (c * 24).toString());
       rect.setAttribute("y", (r * 24).toString());
       // gsap.set(rect, {
@@ -41,7 +42,7 @@ function weightedRandom(collection: string[], ease: string) {
 }
 
 // const colors = ["#7a992b", "#45474d", "#dbd962"];
-const colors = ["#313131", "#191919", "#000000"];
+const colors = ["#1a1a1a", "#0d0d0d", "#000000"];
 
 const OurStrength = () => {
   const svgRef = useRef<SVGSVGElement>(null);
@@ -54,10 +55,9 @@ const OurStrength = () => {
 
         gsap.to(".rect", {
           fill: weightedRandom(colors, "none"),
-          rx: 12,
-          repeat: -1,
-          yoyo: true,
-          duration: 10,
+          // repeat: -1,
+          // yoyo: true,
+          // duration: 10,
         });
       }
     },
@@ -67,19 +67,21 @@ const OurStrength = () => {
     <section id="our-strength" className="relative overflow-hidden">
       <div className="wrapper">
         <svg
-          className="top-0 left-0 absolute w-full hidden"
+          className="top-0 left-0 absolute w-full"
           ref={svgRef}
           id="grid"
           viewBox="0 0 1920 600"
         ></svg>
-        <Title title="Наша сила" />
-        <div className="list">
-          {ourStrength.map((s) => (
-            <div key={s.id} id={s.id}>
-              <h4>{s.title}</h4>
-              <p>{s.text}</p>
-            </div>
-          ))}
+        <div className="relative z-1">
+          <Title title="Наша сила" />
+          <div className="list">
+            {ourStrength.map((s) => (
+              <div key={s.id} id={s.id}>
+                <h4>{s.title}</h4>
+                <p>{s.text}</p>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </section>
