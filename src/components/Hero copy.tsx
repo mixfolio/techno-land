@@ -1,18 +1,19 @@
 const Hero = () => {
   return (
     <section id="hero">
-      <div className="wrapper relative">
+      <div className="container mx-auto relative">
         <video
-          className="absolute object-cover inset-0"
+          // style={{ w}}
+          // id="schema"
+
           src="./videos/hud.m4v"
           loop
           muted
           autoPlay
           playsInline
         />
-        <div className="bg-black/20 absolute inset-0" />
-
-        <div className=" p-20 relative z-1">
+        <div className="bg-black inset-0" />
+        <div className="absolute bg-black/40 inset-0 w-full p-20">
           <h1>
             Создаем инновационные цифровые решения, открывающие новые
             возможности для роста бизнеса
