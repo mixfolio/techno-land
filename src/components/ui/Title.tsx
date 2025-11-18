@@ -8,7 +8,7 @@ type TitleProps = {
 >;
 export const Title: FC<TitleProps> = ({ title, ...props }) => {
   return (
-    <div className="title">
+    <div className="title" {...props}>
       <svg>
         <use href="./circle-bullet.svg" />
       </svg>

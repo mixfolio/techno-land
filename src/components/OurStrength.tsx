@@ -1,4 +1,3 @@
-import { useGSAP } from "@gsap/react";
 import { ourStrength } from "../contstants";
 import { Title } from "./ui/Title";
 
